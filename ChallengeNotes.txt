@@ -1,0 +1,46 @@
+The google drive has 2 folders 
+1-Challenge_API
+2-HelloFreshAutomation
+
+Steps to execute Challenge_API project
+1. Download the project from google drive
+2. Open Eclipe
+3. CLick on File-> Import -> General-> Existing Projects into Workspace -> Select the folder as HelloFreshAPI(this folder is one level inside the Challenge_API folder)
+4. Now right click on the project and say run as maven test
+5. You can also run using the testng - there should be a file named InternalSuite.xml in test/resources
+command to run these tests using testng command prompt - 
+	a.Open the command prompt on your system
+	b.Go to the Test Java project folder where the new InternalSuite.xml is created.
+	c.Type the following line. java org.testng.TestNG InternalSuite.xml 
+	
+Note: on my machine i saw an issue for the first time as class path was not set properly, later it worked fine.
+
+I did not add logging to the api project because of the time constraint(I have an early morning flight to Philidelphia for a MicroSoft Azure Conference). However, I added all the logging, screenshot capture etc in the other task.
+
+
+Steps to execute HellofreshAutomation project
+1. Download the project from google drive
+2. Open Eclipe
+3. CLick on File-> Import -> General-> Existing Projects into Workspace -> Select the folder as HelloFreshAutomation
+4. Now right click on the project and say run as maven test or testNgTest
+5. You can also run using the testng - there should be a file named InternalSuite.xml in test/resources
+command to run these tests using testng command prompt - 
+	a.Open the command prompt on your system
+	b.Go to the Test Java project folder where the new InternalSuite.xml is created.
+	c.Type the following line. java org.testng.TestNG InternalSuite.xml 
+
+In this project I have designed a loosely coupled, data driven and a repository based framework.
+I implemented the logging using Log4j
+For reports as I used testng - am dependant on the default reports generated ny testng. I have experience of developing a html reporting frameowrk earlier - unfortunately I do not enough time to rewrite the entore frameowrk.
+I implemented the data driven using excel files - for this i used apache poi
+I mainatanied reposotory - for all the locators - I used property files for this
+for capturing screenshots - i added a new mothd with testng attribute @aftermethod - to capture a screenshot if something fails
+I have written a automation proeties file - from where we read all the important information to run these tests.
+
+Please let me know if i missed anything.
+
+I appreciate the time you gave(5 days) - but unfortunately I had only one day to complete this with my default workload. If i missed anything please kindly excuse me and let me know your feed back and thoughts on this.
+
+Looking forward for your feedback. Hope to hear from you soon.
+
+Thanks!
